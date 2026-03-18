@@ -1,0 +1,201 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Orbiton, sans-serif;
+}
+
+body {
+    background-color: #f4f7f6;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* College Header - Matching the Image */
+.college-header {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 20px 10px;
+    border-bottom: 5px solid #0033cc;
+}
+
+.college-header h1 {
+    color: #0033cc; /* Blue from logo */
+    font-size: 2.2rem;
+    font-weight: 900;
+}
+
+.college-header h2 {
+    color: #cc0000; /* Red from NAAC */
+    font-size: 1.2rem;
+    margin: 5px 0;
+}
+
+.college-header .sub-text, .college-header .address {
+    color: #0033cc;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.college-header .website {
+    color: #0033cc;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/* Symposium Banner */
+.symposium-title {
+    background: linear-gradient(135deg, #0033cc, #001a66);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.symposium-title h1 {
+    font-size: 3rem;
+    margin: 10px 0;
+    color: #ffcc00; /* Gold/Yellow accent */
+}
+
+.date-time {
+    background: rgba(255, 255, 255, 0.1);
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+.deadline {
+    color: #ffaaaa;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/* Main Sections */
+section {
+    max-width: 800px;
+    margin: 30px auto;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.section-title {
+    color: #0033cc;
+    border-bottom: 2px solid #cc0000;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* Events Lists */
+.event-category {
+    margin-bottom: 20px;
+}
+
+.event-category h3 {
+    background-color: #e6eeff;
+    padding: 10px;
+    border-left: 4px solid #0033cc;
+    margin-bottom: 10px;
+}
+
+.event-category ul {
+    list-style-type: square;
+    margin-left: 30px;
+}
+
+/* Payment Box */
+.payment-box {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    border: 2px dashed #0033cc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.qr-code {
+    max-width: 200px;
+    height: auto;
+    border: 2px solid #333;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.upi-id {
+    font-size: 1.2rem;
+    color: #cc0000;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="tel"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-left: 10px;
+}
+
+.checkbox-group label {
+    font-weight: normal;
+    margin-top: 0;
+    cursor: pointer;
+}
+
+button {
+    margin-top: 25px;
+    padding: 15px;
+    background-color: #0033cc;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #001a66;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 40px;
+}
+
+footer h2 {
+    margin-bottom: 15px;
+    color: #ffcc00;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+    .college-header h1 { font-size: 1.5rem; }
+    .college-header h2 { font-size: 1rem; }
+    .symposium-title h1 { font-size: 2.2rem; }
+    section { margin: 15px; padding: 15px; }
+}

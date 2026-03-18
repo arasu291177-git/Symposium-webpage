@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2nd Flair2k26 - SSM College of Engineering</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="college-header">
+        <h1>SSM COLLEGE OF ENGINEERING</h1>
+        <h2>UGC Conferment of AUTONOMOUS Status | Accredited By NAAC</h2>
+        <p class="sub-text">Approved by AICTE, New Delhi and Affiliated to Anna University, Chennai | Recognized by UGC Under Section 2(f) of 12(B)</p>
+        <p class="address">NH-544, Salem Highway, Komarapalayam - 638183, Namakkal (Dt), TamilNadu</p>
+        <p class="website">Web: www.ssmce.ac.in</p>
+    </header>
+
+    <section class="symposium-title">
+        <p>Proudly Presents</p>
+        <h1>Flair2k26</h1>
+        <div class="date-time">
+            <p><strong>Date:</strong> 09.04.2026 | <strong>Time:</strong> 10:00 A.M.</p>
+            <p class="deadline">Registration Deadline: 4th April 2026</p>
+        </div>
+    </section>
+
+    <section id="events">
+        <h2 class="section-title">Symposium Events</h2>
+        
+        <div class="event-category">
+            <h3>Technical Events (₹150 per head)</h3>
+            <ul>
+                <li>Paper Presentation</li>
+                <li>Technical Quiz</li>
+                <li>Project Presentation</li>
+            </ul>
+        </div>
+
+        <div class="event-category">
+            <h3>Non-Technical Events (₹100 per head)</h3>
+            <ul>
+                <li>IPL Auction</li>
+                <li>Hint Drop</li>
+                <li>Spin and Wheel</li>
+                <li>Photograph Concert</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="payment">
+        <h2 class="section-title">Payment Details</h2>
+        <p>Please pay the registration fee before filling out the form.</p>
+        <ul>
+            <li><strong>Technical Events:</strong> ₹150 per head</li>
+            <li><strong>Non-Technical Events:</strong> ₹100 per head</li>
+        </ul>
+        
+        <div class="payment-box">
+            <img src="qr-code.png" alt="UPI QR Code" class="qr-code">
+            <p class="upi-id"><strong>UPI ID:</strong> 9600276127@ibl</p>
+        </div>
+    </section>
+
+    <section id="registration">
+        <h2 class="section-title">Registration Form</h2>
+        <form action="https://formspree.io/f/xqeygvpv" method="POST">
+            
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="Name" required>
+
+            <label for="college">College Name:</label>
+            <input type="text" id="college" name="College" required>
+
+            <label for="phone">Phone Number / WhatsApp:</label>
+            <input type="tel" id="phone" name="Phone" required>
+
+            <label>Select Technical Events (₹150/head):</label>
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="Events" value="Paper Presentation"> Paper Presentation</label>
+                <label><input type="checkbox" name="Events" value="Technical Quiz"> Technical Quiz</label>
+                <label><input type="checkbox" name="Events" value="Project Presentation"> Project Presentation</label>
+            </div>
+
+            <label>Select Non-Technical Events (₹100/head):</label>
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="Events" value="IPL Auction"> IPL Auction</label>
+                <label><input type="checkbox" name="Events" value="Hint Drop"> Hint Drop</label>
+                <label><input type="checkbox" name="Events" value="Spin and Wheel"> Spin and Wheel</label>
+                <label><input type="checkbox" name="Events" value="Photograph Concert"> Photograph Concert</label>
+            </div>
+
+            <label for="transaction_id">UPI Transaction ID (Required):</label>
+            <input type="text" id="transaction_id" name="Transaction_ID" placeholder="Enter Reference Number" required>
+
+            <button type="submit">Submit Registration</button>
+        </form>
+    </section>
+
+    <footer>
+        <h2>Contact Student Coordinators</h2>
+        <p><strong>Arasu:</strong> +91 9600276127</p>
+        <p><strong>Menaka:</strong> +91 9842317793</p>
+        <p><strong>Email:</strong> <a href="mailto:arasu47arasu@gmail.com" style="color: white;">arasu47arasu@gmail.com</a></p>
+    </footer>
+
+</body>
+</html>
